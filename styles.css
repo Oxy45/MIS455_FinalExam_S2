@@ -1,0 +1,123 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0F0E47;
+    color: #ffffff;
+}
+
+/* Header styles */
+header {
+    background-color: #272757;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search input and button */
+.search-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#countryInput {
+    padding: 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 260px;
+    border: none;
+    border-radius: 6px;
+    background-color: #505081;
+    color: #ffffff;
+}
+
+#countryInput::placeholder {
+    color: #d3d3e0;
+}
+
+#searchBtn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #8686AC;
+    color: #0F0E47;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #b0b0d6;
+}
+
+/* Country info display */
+.country-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.country-info-container div.country-card {
+    background-color: #272757;
+    border: 1px solid #505081;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(134, 134, 172, 0.2);
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.country-info-container div.country-card:hover {
+    transform: translateY(-5px);
+}
+
+.country-info-container h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.country-info-container img {
+    max-width: 120px;
+    margin-bottom: 15px;
+    border: 2px solid #505081;
+    border-radius: 8px;
+}
+
+.country-info-container p {
+    font-size: 16px;
+    color: #e0e0ff;
+    margin: 4px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #272757;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
